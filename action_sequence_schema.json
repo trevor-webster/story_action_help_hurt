@@ -1,0 +1,94 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Story Actions",
+    "description": "A story's sequence of actions performed by agents.",
+    "type": "object",
+    "properties": {
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "description": "The title of the story",
+                    "type": "string"
+                },
+                "text": {
+                    "description": "The text of the story's Wikipedia plot summary",
+                    "type": "string"
+                },
+                "ratedCharacters": {
+                    "description": "Names of characters for whom archetype data exists",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "annotator": {
+                    "description": "Name of the person who performed this manual annotation",
+                    "type": "string"
+                }
+            }
+        },
+        "actions": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/action"
+            }
+        }
+    },
+    "$defs": {
+        "action": {
+            "description": "An action carried out by one or more agents",
+            "type": "object",
+            "properties": {
+                "description": {
+                    "description": "A simple description of the action",
+                    "type": "string"
+                },
+                "action": {
+                    "description": "A minimal verb label for the action",
+                    "type": "string"
+                },
+                "agents": {
+                    "description": "The agents who carry out the action",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "Full name of the agent carrying out the action",
+                                "type": "string"
+                            },
+                            "benefit": {
+                                "description": "Value in [-1,1] encoding the benefit the action provides this agent",
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "othersAffected": {
+                    "description": "Other characters that the action affects",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "Full name of another affected by the action",
+                                "type": "string"
+                            },
+                            "benefit": {
+                                "description": "Value in [-1,1] encoding the benefit the action provides this affected",
+                                "type": "number"
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "action",
+                "description",
+                "agents",
+                "affected"
+            ]
+        }
+    }
+}
