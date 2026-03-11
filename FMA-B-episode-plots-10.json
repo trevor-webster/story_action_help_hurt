@@ -1,0 +1,763 @@
+{
+  "metadata": {
+    "title": "Fullmetal Alchemist: Brotherhood (Episodes 1-10)",
+    "text": "Action-sequence annotation derived from the Wikipedia episode summaries for Fullmetal Alchemist: Brotherhood episodes 1 through 10. Actions are ordered episode-by-episode.",
+    "ratedCharacters": [
+      "Edward Elric",
+      "Alphonse Elric",
+      "Roy Mustang",
+      "Winry Rockbell",
+      "Scar",
+      "Maes Hughes",
+      "Riza Hawkeye",
+      "Alex Louis Armstrong",
+      "King Bradley",
+      "Lust",
+      "Envy",
+      "Gluttony"
+    ],
+    "annotator": "OpenAI Codex"
+  },
+  "actions": [
+    {
+      "action": "hunt rogue alchemist",
+      "description": "Episode 1: Edward and Alphonse are sent with the military to stop Isaac McDougal, the Freezing Alchemist.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Roy Mustang", "benefit": 1 },
+        { "name": "Alex Louis Armstrong", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Isaac McDougal", "benefit": -1 },
+        { "name": "Central command", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Isaac McDougal", "benefit": -1 },
+        { "name": "Central command", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "trigger ice attack",
+      "description": "Episode 1: McDougal activates transmutation circles across Central to freeze and destabilize the command center.",
+      "agents": [
+        { "name": "Isaac McDougal", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Central command", "benefit": -1 },
+        { "name": "State military", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Central command", "benefit": -1 },
+        { "name": "State military", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "stop citywide transmutation",
+      "description": "Episode 1: The Elrics, Armstrong, and Mustang disrupt McDougal's plan before Central is buried in ice.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Roy Mustang", "benefit": 1 },
+        { "name": "Alex Louis Armstrong", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Central citizens", "benefit": 1 },
+        { "name": "State military", "benefit": 1 },
+        { "name": "Isaac McDougal", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Central citizens", "benefit": 1 },
+        { "name": "State military", "benefit": 1 },
+        { "name": "Isaac McDougal", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "kill McDougal",
+      "description": "Episode 1: King Bradley intercepts the fleeing McDougal and kills him.",
+      "agents": [
+        { "name": "King Bradley", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Isaac McDougal", "benefit": -1 },
+        { "name": "State military", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Isaac McDougal", "benefit": -1 },
+        { "name": "State military", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "attempt human transmutation",
+      "description": "Episode 2: Edward and Alphonse try to revive their mother through taboo human transmutation.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Trisha Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Trisha Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "take body parts",
+      "description": "Episode 2: The failed transmutation costs Edward his leg and Alphonse his body.",
+      "agents": [
+        { "name": "Truth", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "bind soul to armor",
+      "description": "Episode 2: Edward sacrifices his right arm to attach Alphonse's soul to a suit of armor.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": -1 }
+      ],
+      "othersAffected": [
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "recruit state alchemist",
+      "description": "Episode 2: Mustang recognizes Edward's talent and steers him into becoming a state alchemist.",
+      "agents": [
+        { "name": "Roy Mustang", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "pass state exam",
+      "description": "Episode 2: Edward passes the examination and receives the title Fullmetal Alchemist.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "State military", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "State military", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "investigate miracles",
+      "description": "Episode 3: Edward and Alphonse go to Liore after suspecting Cornello's miracles are driven by a philosopher's stone.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Father Cornello", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Father Cornello", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "ambush brothers",
+      "description": "Episode 3: Cornello sends a chimera after the Elrics once he learns they are alchemists.",
+      "agents": [
+        { "name": "Father Cornello", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "expose false prophet",
+      "description": "Episode 3: Edward turns Cornello's confession into a public broadcast and defeats him.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Father Cornello", "benefit": -1 },
+        { "name": "Liore citizens", "benefit": 1 },
+        { "name": "Rose", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Father Cornello", "benefit": -1 },
+        { "name": "Liore citizens", "benefit": 1 },
+        { "name": "Rose", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "shatter fake stone",
+      "description": "Episode 3: Edward confirms that Cornello's stone is fake when it breaks apart.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "silence Cornello",
+      "description": "Episode 3: Lust and Gluttony kill Cornello after his defeat.",
+      "agents": [
+        { "name": "Lust", "benefit": 1 },
+        { "name": "Gluttony", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Father Cornello", "benefit": -1 },
+        { "name": "Liore citizens", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Father Cornello", "benefit": -1 },
+        { "name": "Liore citizens", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "murder Basque Grand",
+      "description": "Episode 4: Scar kills Brigadier General Basque Grand and puts the military on alert.",
+      "agents": [
+        { "name": "Scar", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Basque Grand", "benefit": -1 },
+        { "name": "State military", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Basque Grand", "benefit": -1 },
+        { "name": "State military", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "study under Tucker",
+      "description": "Episode 4: Mustang directs the Elrics to Shou Tucker so they can research bio-alchemy.",
+      "agents": [
+        { "name": "Roy Mustang", "benefit": 0 },
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "fuse Nina and Alexander",
+      "description": "Episode 4: Tucker turns his daughter and dog into a talking chimera to preserve his certification.",
+      "agents": [
+        { "name": "Shou Tucker", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Nina Tucker", "benefit": -1 },
+        { "name": "Alexander", "benefit": -1 },
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Nina Tucker", "benefit": -1 },
+        { "name": "Alexander", "benefit": -1 },
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "arrest Tucker",
+      "description": "Episode 4: Tucker is taken into custody after Edward exposes what he did.",
+      "agents": [
+        { "name": "State military", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Shou Tucker", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Shou Tucker", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "execute Tucker",
+      "description": "Episode 4: Scar kills Tucker and the chimera soon after the arrest.",
+      "agents": [
+        { "name": "Scar", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Shou Tucker", "benefit": -1 },
+        { "name": "Nina chimera", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Shou Tucker", "benefit": -1 },
+        { "name": "Nina chimera", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "incite Liore unrest",
+      "description": "Episode 5: Lust, Gluttony, and Envy manipulate Liore by using Cornello's image to push the town toward rebellion.",
+      "agents": [
+        { "name": "Lust", "benefit": 1 },
+        { "name": "Gluttony", "benefit": 1 },
+        { "name": "Envy", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Liore citizens", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Liore citizens", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "attack Elrics",
+      "description": "Episode 5: Scar ambushes Edward and Alphonse in East City.",
+      "agents": [
+        { "name": "Scar", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "damage brothers' bodies",
+      "description": "Episode 5: Scar wrecks Alphonse's armor and destroys Edward's automail arm.",
+      "agents": [
+        { "name": "Scar", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "drive off Scar",
+      "description": "Episode 5: Mustang, Hawkeye, and Armstrong intervene and force Scar to retreat.",
+      "agents": [
+        { "name": "Roy Mustang", "benefit": 1 },
+        { "name": "Riza Hawkeye", "benefit": 1 },
+        { "name": "Alex Louis Armstrong", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Scar", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Scar", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "return to Resembool",
+      "description": "Episode 5: The Elrics decide to go home for repairs after the battle.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Winry Rockbell", "benefit": 0 }
+      ],
+      "affected": [
+        { "name": "Winry Rockbell", "benefit": 0 }
+      ]
+    },
+    {
+      "action": "identify Marcoh",
+      "description": "Episode 6: Armstrong spots Tim Marcoh and explains his history as a vanished state alchemist tied to stone research.",
+      "agents": [
+        { "name": "Alex Louis Armstrong", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "reveal stone clue",
+      "description": "Episode 6: Marcoh admits he researched the philosopher's stone and gives the Elrics a clue to his notes.",
+      "agents": [
+        { "name": "Tim Marcoh", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "repair automail",
+      "description": "Episode 6: Winry and Pinako replace Edward's damaged automail in Resembool.",
+      "agents": [
+        { "name": "Winry Rockbell", "benefit": 1 },
+        { "name": "Pinako Rockbell", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "rebuild armor",
+      "description": "Episode 6: Edward restores Alphonse's armor body from the damaged pieces.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "return to Central",
+      "description": "Episode 6: The Elrics and Armstrong head back to Central to pursue Marcoh's research.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Alex Louis Armstrong", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Philosopher's stone investigation", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Philosopher's stone investigation", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "destroy library records",
+      "description": "Episode 7: The Elrics discover the state library branch holding Marcoh's notes has burned down.",
+      "agents": [
+        { "name": "Unknown", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Philosopher's stone investigation", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Philosopher's stone investigation", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "reproduce Marcoh notes",
+      "description": "Episode 7: Sheska rewrites Marcoh's burned research from memory for the Elrics.",
+      "agents": [
+        { "name": "Sheska", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "decode philosopher's stone",
+      "description": "Episode 7: Edward and Alphonse crack Marcoh's code and learn the stone is made from human lives.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Maria Ross", "benefit": -1 },
+        { "name": "Denny Brosh", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Maria Ross", "benefit": -1 },
+        { "name": "Denny Brosh", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "find fifth laboratory",
+      "description": "Episode 7: Edward uncovers a second clue pointing to the abandoned laboratory beside the prison.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "sneak into lab",
+      "description": "Episode 7: The brothers ignore Armstrong's order and infiltrate the fifth laboratory.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Alex Louis Armstrong", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Alex Louis Armstrong", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "confront armor killers",
+      "description": "Episode 8: Edward fights Slicer inside the lab while Alphonse battles Barry the Chopper outside.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 0 },
+        { "name": "Alphonse Elric", "benefit": 0 },
+        { "name": "Slicer", "benefit": 0 },
+        { "name": "Barry the Chopper", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Alphonse Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "undermine Alphonse identity",
+      "description": "Episode 8: Barry tells Alphonse he may be an artificial being created by Edward, shaking his confidence.",
+      "agents": [
+        { "name": "Barry the Chopper", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Edward Elric", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Alphonse Elric", "benefit": -1 },
+        { "name": "Edward Elric", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "defeat Slicer",
+      "description": "Episode 8: Edward uses Scar's destruction method to beat Slicer despite his failing automail.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Slicer", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Slicer", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "erase lab evidence",
+      "description": "Episode 8: Lust and Envy kill Slicer, recover Edward, and destroy the laboratory to hide the stone operation.",
+      "agents": [
+        { "name": "Lust", "benefit": 1 },
+        { "name": "Envy", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Slicer", "benefit": -1 },
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Philosopher's stone investigation", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Slicer", "benefit": -1 },
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Philosopher's stone investigation", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "rescue Alphonse",
+      "description": "Episode 8: Ross and Brosh arrive in time to keep Barry from finishing Alphonse.",
+      "agents": [
+        { "name": "Maria Ross", "benefit": 1 },
+        { "name": "Denny Brosh", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Barry the Chopper", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Alphonse Elric", "benefit": 1 },
+        { "name": "Barry the Chopper", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "repair automail again",
+      "description": "Episode 9: Winry comes to Central and fixes Edward's broken automail arm.",
+      "agents": [
+        { "name": "Winry Rockbell", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "confront false memories",
+      "description": "Episode 9: Alphonse challenges Edward over Barry's claim that his memories were fabricated.",
+      "agents": [
+        { "name": "Alphonse Elric", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Winry Rockbell", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": -1 },
+        { "name": "Winry Rockbell", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "defend Edward",
+      "description": "Episode 9: Winry rebukes Alphonse and explains Edward's guilt and fear over what happened to him.",
+      "agents": [
+        { "name": "Winry Rockbell", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "reaffirm brotherhood",
+      "description": "Episode 9: After fighting and reflecting on their past, the brothers accept each other's bond again.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Winry Rockbell", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Winry Rockbell", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "warn Elric brothers",
+      "description": "Episode 10: Bradley visits the hospital and cautions Edward and Alphonse to be careful around the military.",
+      "agents": [
+        { "name": "King Bradley", "benefit": 0 }
+      ],
+      "othersAffected": [
+        { "name": "Edward Elric", "benefit": 0 },
+        { "name": "Alphonse Elric", "benefit": 0 }
+      ],
+      "affected": [
+        { "name": "Edward Elric", "benefit": 0 },
+        { "name": "Alphonse Elric", "benefit": 0 }
+      ]
+    },
+    {
+      "action": "choose Dublith journey",
+      "description": "Episode 10: Edward and Alphonse decide to seek Izumi Curtis in Dublith for help on the philosopher's stone and agree to take Winry via Rush Valley.",
+      "agents": [
+        { "name": "Edward Elric", "benefit": 1 },
+        { "name": "Alphonse Elric", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Winry Rockbell", "benefit": 1 }
+      ],
+      "affected": [
+        { "name": "Winry Rockbell", "benefit": 1 }
+      ]
+    },
+    {
+      "action": "connect conspiracies",
+      "description": "Episode 10: Hughes links Liore, the fifth laboratory, and the Ishval war, getting closer to the truth.",
+      "agents": [
+        { "name": "Maes Hughes", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Roy Mustang", "benefit": 1 },
+        { "name": "Hidden conspirators", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Roy Mustang", "benefit": 1 },
+        { "name": "Hidden conspirators", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "ambush Hughes",
+      "description": "Episode 10: Lust corners Hughes and Envy kills him while disguised first as Ross and then as Gracia.",
+      "agents": [
+        { "name": "Lust", "benefit": 1 },
+        { "name": "Envy", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Maes Hughes", "benefit": -1 },
+        { "name": "Gracia Hughes", "benefit": -1 },
+        { "name": "Elicia Hughes", "benefit": -1 },
+        { "name": "Roy Mustang", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Maes Hughes", "benefit": -1 },
+        { "name": "Gracia Hughes", "benefit": -1 },
+        { "name": "Elicia Hughes", "benefit": -1 },
+        { "name": "Roy Mustang", "benefit": -1 }
+      ]
+    },
+    {
+      "action": "suspect military insider",
+      "description": "Episode 10: Mustang concludes that Hughes' murder points to someone high-ranking inside the military.",
+      "agents": [
+        { "name": "Roy Mustang", "benefit": 1 }
+      ],
+      "othersAffected": [
+        { "name": "Hidden conspirators", "benefit": -1 }
+      ],
+      "affected": [
+        { "name": "Hidden conspirators", "benefit": -1 }
+      ]
+    }
+  ]
+}
