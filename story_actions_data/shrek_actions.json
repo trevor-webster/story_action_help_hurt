@@ -1,0 +1,628 @@
+{
+  "metadata": {
+    "title": "Shrek",
+    "text": "Shrek is an asocial ogre who loves the solitude of his swamp and enjoys fending off mobs and intruders. One day, his life is interrupted after he inadvertently saves a talkative Donkey from some soldiers, prompting Donkey to forcibly stay with him. Donkey is one of many fairy tale creatures that are being exiled by the dwarfish Lord Farquaad of Duloc to beautify his land. However, the creatures inadvertently end up in the swamp. Angered by the intrusion, Shrek resolves to visit Farquaad and demand that he move the creatures elsewhere, reluctantly allowing Donkey to accompany him as he is the only one who knows where Duloc is.\n\nMeanwhile, Farquaad is presented with the Magic Mirror, who tells him that he must marry a princess in order to become a king. Presented with three options, Farquaad chooses Princess Fiona, who is imprisoned in a castle guarded by a Dragon. Unwilling to rescue Fiona himself, he organizes a tournament in which the winner will receive the \"privilege\" of performing the task on his behalf. When Shrek and Donkey arrive at Duloc, Farquaad announces that whoever kills Shrek will win the tournament; however, Shrek and Donkey defeat Farquaad's knights with relative ease. Amused, Farquaad proclaims Shrek his champion instead, and agrees to relocate the fairy tale creatures in exchange for Shrek rescuing Fiona.\n\nShrek and Donkey travel to the castle and the Dragon attacks them. Shrek locates Fiona, who is bewildered by his lack of romanticism; they flee the castle after rescuing Donkey from the Dragon, who is revealed to be female and has fallen in love with him. When Shrek removes his helmet and reveals he is an ogre, Fiona stubbornly refuses to go to Duloc, demanding Farquaad arrive in person to save her, but Shrek carries Fiona against her will. That night, after setting up camp, and with Fiona alone in a cave, Shrek admits to Donkey that he is asocial because he grew frustrated over being constantly judged for his appearance. Fiona overhears this and becomes kinder to Shrek. The next day, Robin Hood and his band of Merry Men harass the three, but Fiona easily defeats them in physical combat. Shrek becomes impressed with Fiona, and they begin to fall in love.\n\nWhen the trio nears Duloc, Fiona takes shelter in a windmill for the evening. Donkey enters alone and discovers that Fiona has transformed into an ogress. She explains that during her childhood, she was cursed to transform into an ogress at night but retain her human form during the day. She tells Donkey that only \"true love's first kiss\" will break the spell and allow her to \"take love's true form\". Meanwhile, Shrek is about to confess his feelings to Fiona, when he overhears Fiona referring to herself as an \"ugly beast\". Thinking that she is talking about him, Shrek angrily leaves and returns the next morning with Farquaad. Confused and hurt by Shrek's abrupt hostility, Fiona reluctantly accepts Farquaad's marriage proposal and requests that they be married that day before sunset. Shrek dismisses Donkey and returns to his now vacated swamp, but quickly realizes that he feels miserable without Fiona. Donkey returns and lectures Shrek for jumping to conclusions and reveals that Fiona was not referring to him as an \"ugly beast\", although Donkey does not reveal Fiona's secret to Shrek. The two reconcile, and Donkey summons the Dragon, whom he had reunited with earlier in the day. Shrek and Donkey ride Dragon to Duloc so they can stop the wedding.\n\nShrek interrupts the ceremony just before it ends and expresses his feelings for Fiona. The sun sets, and Fiona transforms into an ogress in front of everyone. Disgusted and enraged, Farquaad orders Shrek to be executed and Fiona re-imprisoned, while he declares himself king. The two are saved when the Dragon, ridden by Donkey, breaks in and devours Farquaad. Shrek and Fiona kiss, and Fiona's curse is broken; though she remains an ogress, Shrek reassures her that he still finds her beautiful. They marry in the swamp with the fairy tale creatures in attendance, then leave for their honeymoon.",
+    "ratedCharacters": [
+      "Donkey",
+      "Shrek",
+      "Princess Fiona"
+    ],
+    "annotator": "Nate Borland"
+  },
+  "actions": [
+    {
+      "description": "Shrek fends off mobs",
+      "action": "defend",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "townsfolk",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek inadvertently saves Donkey",
+      "action": "save",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 0.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        },
+        {
+          "name": "Lord Farquaad",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Donkey stays with Shrek",
+      "action": "stay",
+      "agents": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Lord Farquaad is exiling fairytale creatures",
+      "action": "exile",
+      "agents": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": -1.0
+        },
+        {
+          "name": "fairytale creatures",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "fairytale creatures stay in swamp",
+      "action": "stay",
+      "agents": [
+        {
+          "name": "fairytale creatures",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek travels to Duloc with Donkey",
+      "action": "travel",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": []
+    },
+    {
+      "description": "Magic Mirror tells Farquaad that he must marry a princess",
+      "action": "inform",
+      "agents": [
+        {
+          "name": "Magic Mirror",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Farquaad holds a tournament",
+      "action": "host",
+      "agents": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "knights",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Farquaad orders Shrek killed",
+      "action": "order execution",
+      "agents": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        },
+        {
+          "name": "Donkey",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek defeats knights",
+      "action": "defeat",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "knights",
+          "benefit": -1.0
+        },
+        {
+          "name": "Lord Farquaad",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Lord Farquaad proclaims Shrek his champion",
+      "action": "proclaim champion",
+      "agents": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek and Donkey travel to the castle",
+      "action": "travel",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": []
+    },
+    {
+      "description": "Dragon attacks Shrek and Donkey",
+      "action": "attack",
+      "agents": [
+        {
+          "name": "Dragon",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        },
+        {
+          "name": "Donkey",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek rescues Princess Fiona",
+      "action": "rescue",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        },
+        {
+          "name": "Dragon",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Dragon falls in love with Donkey",
+      "action": "fall in love",
+      "agents": [
+        {
+          "name": "Dragon",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek rescues Donkey from Dragon",
+      "action": "rescue",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        },
+        {
+          "name": "Dragon",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek reveals he's an ogre",
+      "action": "reveal",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek carries Fiona towards Duloc",
+      "action": "carry",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek reveals his past to Donkey, Fiona overhears",
+      "action": "reveal",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        },
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Robin Hood harasses Shrek, Fiona, and Donkey",
+      "action": "harass",
+      "agents": [
+        {
+          "name": "Robin Hood",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        },
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        },
+        {
+          "name": "Donkey",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Fiona defeats Robin Hood",
+      "action": "defeat",
+      "agents": [
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Robin Hood",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek and Fiona begin to fall in love",
+      "action": "fall in love",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": []
+    },
+    {
+      "description": "Fiona is forced to reveal her ogre curse to Donkey, Shrek overhears",
+      "action": "reveal",
+      "agents": [
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        },
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek brings Farquaad to get Fiona",
+      "action": "bring",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        },
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Fiona agrees to marry Farquaad",
+      "action": "agree",
+      "agents": [
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        },
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek dismisses Donkey and returns to his swamp",
+      "action": "withdraw",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Donkey",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Donkey lectures Shrek and they reconcile",
+      "action": "reconcile",
+      "agents": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Donkey and Shrek ride Dragon to Duloc",
+      "action": "travel",
+      "agents": [
+        {
+          "name": "Donkey",
+          "benefit": 1.0
+        },
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Dragon",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": []
+    },
+    {
+      "description": "Shrek interrupts Fiona and Farquaad wedding",
+      "action": "interrupt wedding",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        },
+        {
+          "name": "Lord Farquaad",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Fiona reveals ogre curse to attendees",
+      "action": "reveal",
+      "agents": [
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Lord Farquaad",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Farquaad declares himself king, ordering Shrek executed and Fiona imprisoned",
+      "action": "order punishment",
+      "agents": [
+        {
+          "name": "Lord Farquaad",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": -1.0
+        },
+        {
+          "name": "Princess Fiona",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Dragon rescues Shrek and Fiona by eating Farquaad",
+      "action": "rescue",
+      "agents": [
+        {
+          "name": "Dragon",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        },
+        {
+          "name": "Lord Farquaad",
+          "benefit": -1.0
+        }
+      ]
+    },
+    {
+      "description": "Shrek and Fiona kiss, breaking Fiona's curse",
+      "action": "break curse with kiss",
+      "agents": [
+        {
+          "name": "Shrek",
+          "benefit": 1.0
+        },
+        {
+          "name": "Princess Fiona",
+          "benefit": 1.0
+        }
+      ],
+      "othersAffected": []
+    },
+    {
+      "description": "",
+      "action": "",
+      "agents": [
+        {
+          "name": "",
+          "benefit": ""
+        }
+      ],
+      "othersAffected": []
+    }
+  ]
+}

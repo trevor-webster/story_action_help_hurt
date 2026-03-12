@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "title": "FMA-B: The Fifth Laboratory",
+    "text": "At the fifth laboratory, Alphonse fights Barry the Chopper outside, and Edward faces Slicer inside. It is revealed that both opponents are souls of killers affixed to armor. Edward struggles in his battle when his automail arm malfunctions. Alphonse initially has the advantage in his fight, until Barry suggests that Alphonse never truly existed, claiming he was a doll made by Edward with false memories, causing Alphonse to contemplate the possibility. Edward is particularly troubled when his opponent turns out to be a pair of brothers, each controlling a different part of the armor. Edward manages to defeat Slicer by use of Scar's destruction technique, but before he can extract any information from the two brothers, they are killed by Lust and Envy. Edward demands to know who they are and tries to use alchemy, but his automail arm breaks and he is knocked out by Envy. Outside, Barry almost gains the upper hand over Alphonse, but Alphonse is saved by the arrival of Brosh and Ross. Lust and Envy destroy the lab to cover up the evidence of the philosopher's stone, but not before carrying Edward outside and handing him over to Brosh and Ross, commenting that he is a valuable resource.",
+    "ratedCharacters": [
+      "Alphonse Elric",
+      "Barry",
+      "Edward Elric",
+      "Lust",
+      "Envy",
+      "Denny Brosh"
+    ],
+    "annotator": "Trevor Webster"
+  },
+  "actions": [
+    {
+      "description": "Alphonse fights Barry the Chopper outside",
+      "action": "fight outside",
+      "agents": [
+        {
+          "name": "Alphonse Elric",
+          "benefit": 1.0
+        },
+        {
+          "name": "Barry",
+          "benefit": -1.0
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Alphonse Elric",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Edward faces Slicer",
+      "action": "fight inside",
+      "agents": [
+        {
+          "name": "Edward Elric",
+          "benefit": 0.8
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Slicer",
+          "benefit": -0.8
+        }
+      ]
+    },
+    {
+      "description": "use of Scar's destruction technique",
+      "action": "use destruction technique",
+      "agents": [
+        {
+          "name": "Edward Elric",
+          "benefit": 0.5
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Slicer",
+          "benefit": -0.8
+        }
+      ]
+    },
+    {
+      "description": "Edward demands to know Sins but knocked out and spared",
+      "action": "get knocked out",
+      "agents": [
+        {
+          "name": "Edward Elric",
+          "benefit": -0.5
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Lust",
+          "benefit": 1.0
+        },
+        {
+          "name": "Envy",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "Alphonse is saved by the arrival of Brosh and Ross",
+      "action": "saved before defeat",
+      "agents": [
+        {
+          "name": "Denny Brosh",
+          "benefit": 0.5
+        },
+        {
+          "name": "Ross",
+          "benefit": 0.5
+        }
+      ],
+      "othersAffected": [
+        {
+          "name": "Alphonse Elric",
+          "benefit": 1.0
+        }
+      ]
+    },
+    {
+      "description": "",
+      "action": "",
+      "agents": [
+        {
+          "name": "",
+          "benefit": ""
+        }
+      ],
+      "othersAffected": []
+    }
+  ]
+}
